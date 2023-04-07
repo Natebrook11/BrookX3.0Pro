@@ -1,15 +1,14 @@
-import "@stripe/stripe-js";
-import React from "react";
-import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-import App from "./App";
-import { BrowserRouter } from "react-router-dom"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { sendToVercelAnalytics } from './vitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-  <App/>
-  </BrowserRouter>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
-reportWebVitals();
+reportWebVitals(sendToVercelAnalytics);

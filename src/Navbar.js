@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "./Navbar.css";
-import SmoothScrollButton from "./Scrool"
 
 
 const Navbar = () => {
@@ -182,7 +181,6 @@ const Navbar = () => {
         ref={overlayElement}
         onClick={() => addOverlay()}
       ></div>
-    <SmoothScrollButton/>
     </>
   );
 };

@@ -1,22 +1,13 @@
-import React from "react";
-import "./App.css";
-import Projects from "./components/CardComp";
-import Carousel from "./components/Carousel";
-import Navbar from "./components/Navbar";
-import ChatBot from "./components/ChatBot";
-import Hero from "./components/Hero";
+import logo from './logo.svg';
+import './App.css';
+import Navbar from './Navbar';
 
-
-const App = () => {
-
+function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Projects />
-      <Carousel />
-      <ChatBot />
+      <Navbar/>
     </div>
   );
-};
+}
+
 export default App;
