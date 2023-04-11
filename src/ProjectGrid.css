@@ -8,7 +8,7 @@
   --text-ease: cubic-bezier(0.38, 0.26, 0.05, 1.07);
 
   --title-stagger: 0.05s;
-  --highlight: white;
+  --highlight: var(--sec);
 }
 
 #main {
@@ -71,7 +71,7 @@
 }
 
 .card:hover {
-  box-shadow: white 0 5vw 6vw -9vw,
+  box-shadow: var(--sec) 0 5vw 6vw -9vw,
     var(--highlight) 0 5.5vw 5vw -7.5vw,
     rgba(50, 50, 80, 0.5) 0px 4vw 8vw -2vw,
     rgba(0, 0, 0, 0.8) 0px 4vw 5vw -3vw;
@@ -120,7 +120,7 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  color: white;
+  color: #fff;
   text-align: left;
   z-index: 3;
   padding: 1rem;
@@ -196,7 +196,7 @@
 
 .card-button {
   background-color: coral;
-  color: white;
+  color: var(--sec);
   border: none;
   padding: 1rem 2rem;
   font-size: 1rem;

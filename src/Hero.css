@@ -5,9 +5,10 @@
   background-repeat: no-repeat; */
   
   height: 75vh;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--sec);
   width: 100%;
   font-family: "Audiowide";
+  transition: all ease .5s;
 }
 
 .hero__content {
@@ -30,13 +31,15 @@
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: rgb(0, 0, 0);
+  color: var(--secondary);
+  transition: all ease .25s;
 }
 
 .hero__title strong{
-  background: -webkit-linear-gradient(180deg , #000000,  #00bdc4);
+  background: -webkit-linear-gradient(180deg , var(--secondary),  #00bdc4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all ease .25s;
 }
 
 .hero__description {
@@ -54,8 +57,8 @@
   padding: 1.3em 3em;
   font-size: 12px;
   letter-spacing: 2.5px;
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--main);
+  background-color: var(--secondary);
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -67,7 +70,7 @@
 .hero__button:hover {
   background-color: #baeef0;
   box-shadow: 0px 15px 20px #baeef0;
-  color: #000000;
+  color: var(--secondary);
   transform: translateY(-7px);
 }
 
@@ -82,10 +85,11 @@
 .hero__code {
   margin-top: 3rem;
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: var(--secondary);
   padding: 1.5rem;
   border-radius: 10px;
-  background: #000000;
+  background: var(--main);
+  font-weight: bold;
 }
 
 .hero__code code {
